@@ -23,8 +23,19 @@ editor_options:
     address this concern, we plan to ...." \| \|Keywords \| 3-5 keywords
     that summarize your project. (e.g., "Keywords: human physiology;
     bicycle exercise; elderly; power and heart rate times-series data")
-    \| \|Introduction \| Briefly introduce your project. (About 150
-    words.)
+    \|
+
+### Keywords
+
+-   Improved water source
+
+-   Unsafe water
+
+-   Global equality to clean water
+
+### Introduction
+
+-   \|Introduction \| Briefly introduce your project. (About 150 words.)
 
 ### **Problem Domain**
 
@@ -72,10 +83,33 @@ covering the globe which makes the JMP a very credible source for data.\
 |------------------------|----------------|-------------------|-------------------------------------------|
 | Global Access to Water | 5070           | 8                 | <https://ourworldindata.org/water-access> |
 
+### Implications
+
+The implications of global access to water relies heavily on politics,
+and therefore policymakers. Without global support and commitment, it is
+an impossible mission for one individual country, or even multiple
+countries to accomplish. In addition, technology advancements would make
+the push for access to clean water much easier. With new advancements in
+sanitation or cleaning water, it allows us to more efficiently and
+economically create systems for clean water. For example, a system to
+process excreta or urine would allow ether energy generation or a
+renewable water source.
+
+<https://www.csis.org/analysis/importance-water-foreign-policy>
+
+<https://www.weforum.org/agenda/2022/08/access-clean-water-inequality-financing/>
+
 ### Limitations
 
--   \|Limitations \| Proposal only. What limitations might you need to
-    address? Briefly discuss. (About 150 words.) \|
+A limitation of this data is that this data is from 2019. Things could
+have changed between then and now, such as technological advancements
+that would allow us to make exponentially faster progress. There are
+also a some areas that data is not collected, but these are not counted
+into the total at all. On the visuals, they are shown as white. Another
+possible limitation is the arbitrary definitions of all of the
+classifications of accessibility, such as "basic", "limited", and
+"improved". These may conflict or be different than other reports and
+the definitions may be different.
 
 ### Findings
 
