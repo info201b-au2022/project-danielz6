@@ -14,28 +14,7 @@ editor_options:
 
 ### **Abstract**
 
--   \|Abstract \| Write a short abstract of three sentences. Your
-    abstract should summarize your entire project, but only the very
-    most important aspects. Here are two examples of how you might
-    structure your abstract: **(1)** "Our main question is .... This
-    question is important because .... To address the question, we will
-    ...." and **(2)** "We are concerned with ..., because .... To
-    address this concern, we plan to ...." \| \|Keywords \| 3-5 keywords
-    that summarize your project. (e.g., "Keywords: human physiology;
-    bicycle exercise; elderly; power and heart rate times-series data")
-    \|
-
-### Keywords
-
--   Improved water source
-
--   Unsafe water
-
--   Global equality to clean water
-
-### Introduction
-
--   \|Introduction \| Briefly introduce your project. (About 150 words.)
+We are concerned with global water quality in comparison to the United States and how it fluctuates and stays the same. To address this concern, we plan to seek out data that will give us a good idea of the comparison between the global and national numbers so we can analyze the differences and determine what factors led to the discrepancies. This is an important concept because water quality remains a prevalent emerging issue in numerous cities across the country such as Reno, Pomona, and Arlington.
 
 ### **Problem Domain**
 
@@ -50,11 +29,8 @@ editor_options:
 
 ### Research Questions
 
--   \|Research Questions \| Present your 3-5 research questions. You
-    should present each research question. For each research question,
-    you should discuss why it is important and what motivates the
-    question. (About 50 words for each question, so for four questions
-    you would write about 200 words or more if needed.)
+Our first research question is which factors caused the United States' current standing in terms of global water quality? This is important because if we are able to understand the reasons for this then we can work towards changing that so we can drastically improve the water quality. The motivation for the question is that the presence of contaminants in cities around the U.S. has led to severe health issues for the people living there so determining the leading factors is essential. The second research question is how do socioeconomic factors influence water quality in the U.S. and other countries? The reason that this is important is because the social and economic aspects of this major health problem have contributed heavily to it so now that we identified the issues, it's easier to prevent them from influencing water quality which is what motivates this inquiry. Our third research question is why should we prioritize water quality as a serious environmental issue on a local and global scale? This is important to explore because there are numerous other issues to focus on and the motivation for this is to understand the depth of this problem both locally and globally. 
+
 
 ### The Dataset
 
@@ -83,33 +59,10 @@ covering the globe which makes the JMP a very credible source for data.\
 |------------------------|----------------|-------------------|-------------------------------------------|
 | Global Access to Water | 5070           | 8                 | <https://ourworldindata.org/water-access> |
 
-### Implications
-
-The implications of global access to water relies heavily on politics,
-and therefore policymakers. Without global support and commitment, it is
-an impossible mission for one individual country, or even multiple
-countries to accomplish. In addition, technology advancements would make
-the push for access to clean water much easier. With new advancements in
-sanitation or cleaning water, it allows us to more efficiently and
-economically create systems for clean water. For example, a system to
-process excreta or urine would allow ether energy generation or a
-renewable water source.
-
-<https://www.csis.org/analysis/importance-water-foreign-policy>
-
-<https://www.weforum.org/agenda/2022/08/access-clean-water-inequality-financing/>
-
 ### Limitations
 
-A limitation of this data is that this data is from 2019. Things could
-have changed between then and now, such as technological advancements
-that would allow us to make exponentially faster progress. There are
-also a some areas that data is not collected, but these are not counted
-into the total at all. On the visuals, they are shown as white. Another
-possible limitation is the arbitrary definitions of all of the
-classifications of accessibility, such as "basic", "limited", and
-"improved". These may conflict or be different than other reports and
-the definitions may be different.
+-   \|Limitations \| Proposal only. What limitations might you need to
+    address? Briefly discuss. (About 150 words.) \|
 
 ### Findings
 
@@ -131,12 +84,8 @@ the definitions may be different.
 
 ### Acknowledgements
 
--   \|Acknowledgements \| Is there anyone you would like to thank? A
-    librarian who helped you with your research? A Teaching Assistant? A
-    friend who helped you find your data? Say thank you in this
-    section.\| \|References \| Include your three or more research
-    citations here. Also, include citations to your data files. Please
-    use a standard citation style of your choice. See [Citing
-    Sources](https://guides.lib.uw.edu/research/citations) at the UW
-    Library. \| \|Appendix A: Questions\| Do you have questions for your
-    TA or instructor? Include them here.\|
+Thank you to our TA, Ishita, for providing us with examples of research questions and helping us with this initial stage of the project. 
+
+### Appendix A: Questions
+
+Our project group has no questions for our TA or instructor at this time. 
