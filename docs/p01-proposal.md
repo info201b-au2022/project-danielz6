@@ -4,9 +4,9 @@ editor_options:
     wrap: 72
 ---
 
-# Diviation in United States' Water Quality: Project Proposal
+# Deviation in United States' Water Quality: Project Proposal
 
-## Code name: *Contributors: Anumita Basani (Anumitab\@uw.edu), Diya Kumaran   (Diyak2\@uw.edu), Daniel Zhang (Danielz6\@uw.edu), Eddy*
+## Code name: *Contributors: Anumita Basani (Anumitab\@uw.edu), Diya Kumaran   (Diyak2\@uw.edu), Eddy Wong (Eddyw206\@hotmail.com), Daniel Zhang (Danielz6\@uw.edu)*
 
 ### *INFO-201: Technical Foundations of Informatics - The Information School - University of Washington*
 
@@ -47,35 +47,57 @@ editor_options:
 
 ### The Dataset
 
--   \| \|The Dataset \| **(1)** Describe how your dataset is related to
-    your problem domain and, specifically, to your research qeustions.
-    That is, how will your dataset enable you to answer your research
-    questions? **(2)** Include a table that presents the name of each
-    data file, the number of observations (rows), and the number of
-    variables (columns). **(3)** Include a full citation to each data
-    file, including URL. **(4)** Finally, describe the provenance of
-    your dataset, addressing such key questions as: (a) Who collected
-    the data? When? For what purpose? (b) How was the data collection
-    effort funded? Who is likely to benefit from the data or make money?
-    (c) How was the data validated and held secure? Is it credible and
-    trustworthy? (d) How did you obtain the data? Do you credit the
-    source of the data? (About 400 words.) \| \|Expected Implications \|
-    Proposal only. Assuming you answer your research questions, briefly
-    describe the expected or possible implications for technologists,
-    designers, and policymakers. (About 150 words.) \|
+This data set provides global population data that has access to safe
+and managed drinking water. This is related to our research question,
+\"What factors cause the state of the water quality in the US?\", as it
+shows what factors are involved in each country for their current water
+access/quality. The data set is provided/collected by WHO/UNICEF Joint
+Monitoring Programme (JMP) for Water Supply and Sanitation. The JMP
+database has 5,000+ national data sources with information on WASH. This
+includes nationally representative household surveys, censuses and
+administrative reports. This data set includes data starting from the
+year 2000 to 2020. Its purpose is to show global statistics of water
+access and how they differ in different regions of the world.The JMP\'s
+four main objectives for collecting data is as it states on their
+official website, \"The JMP strategy comprises four main objectives
+which include consolidating its normative function and its role as a
+global custodian of WASH data, further strengthening country support,
+and promoting a more integrated approach to monitoring WASH and related
+issues in collaboration with other agencies.\" The JMP is the leading
+source when it comes to comparing estimates of progress at the global,
+national and regional levels and also has a very extensive database
+covering the globe which makes the JMP a very credible source for data.\
+
+| **Data Set**           | **\# of Rows** | **\# of Columns** | **URL**                                   |
+|------------------------|----------------|-------------------|-------------------------------------------|
+| Global Access to Water | 5070           | 8                 | <https://ourworldindata.org/water-access> |
 
 ### Limitations
 
 -   \|Limitations \| Proposal only. What limitations might you need to
-    address? Briefly discuss. (About 150 words.) \| \|*Findings* \| *Not
-    for the project proposal; for final report only. Give answers to
-    each of your research questions. (About 400 words.)* \|
-    \|*Discussion* \| *Not for the project proposal; for final report
+    address? Briefly discuss. (About 150 words.) \|
+
+### Findings
+
+-   \|*Findings* \| *Not for the project proposal; for final report
+    only. Give answers to each of your research questions. (About 400
+    words.)* \|
+
+### Discussion
+
+-   \|*Discussion* \| *Not for the project proposal; for final report
     only. Discuss importance and/or implications of your findings (About
-    400 words.)* \| \|*Conclusion* \| *Not for the project proposal; for
-    final report only. Give the reader a summary point, the key point
-    that you will like your audience to leave with. (About 400 words.)*
-    \| \|Acknowledgements \| Is there anyone you would like to thank? A
+    400 words.)* \|
+
+### Conclusion
+
+-   \|*Conclusion* \| *Not for the project proposal; for final report
+    only. Give the reader a summary point, the key point that you will
+    like your audience to leave with. (About 400 words.)* \|
+
+### Acknowledgements
+
+-   \|Acknowledgements \| Is there anyone you would like to thank? A
     librarian who helped you with your research? A Teaching Assistant? A
     friend who helped you find your data? Say thank you in this
     section.\| \|References \| Include your three or more research
