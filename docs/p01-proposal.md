@@ -35,18 +35,97 @@ editor_options:
 
 ### Introduction
 
--   \|Introduction \| Briefly introduce your project. (About 150 words.)
+Our topic surrounds the issue of water quality in the United
+States and global. Drinking water quality varies in each place,
+depending on
+the condition of the water source it comes from and the treatment it
+receives
+before becoming available to the public. In the U.S., there are set
+standards
+such as the Safe Drinking Water Act, and Environmental Protection Agency
+(EPA)
+regulations that control the water quality and assure that it is safe to
+consume. The SDWA includes guidelines for drinking water quality, water
+testing
+schedules, and water testing methods. Many states enforce their own
+drinking
+water standards that aim to protect similar to the EPA\'s national
+standard.
 
-### **Problem Domain**
+### 
+**Problem Domain**
 
--    \|Problem Domain \| Use short sub-sections to describe your topic
-    and the setting (that is, the sociotechnical situation), including
-    project framing, human values, direct and indirect stakeholders,
-    possible harms and benefits. See the Design Brief, section B.3.
-    **Note**: You *must* include three citations to related work (URLs
-    to similar work, high quality articles from the popular press,
-    reseach papers, etc. ). You may find it helpful to include a figure.
-    (About 400 words.) \|
+-   [**Project Framing:**]{.underline}
+
+Our project examines the US\' water
+quality and systems in seeing what factors and aspects contribute to the
+water
+systems and sanitation and how that functions throughout the country.
+The data
+we look at spans various areas and the quality of water, that we can
+utilize to
+further examine what affects water sanitation in a certain region.
+Comparing
+the US to other countries allows us to examine what contributes to water
+sanitation and what policies and factors are in place in countries with
+great
+water health compared to lower quality water.
+
+The U.S.\'s water quality is among
+the safest in the world, however, there are many possible sources of
+contamination, that can lead to health issues, including
+gastrointestinal
+illness, reproductive problems, and neurological disorders. Young
+children,
+pregnant women, and people with weaker immune systems are at risk for
+illness.
+
+-   [**Human Values:**]{.underline}
+
+Public health and safety are essential to society and for human
+survival, aiming to improve our quality of
+life, helps children succeed, and reduces human suffering. Water
+sanitation is
+an issue that falls into the category of public health with a focus on
+community-wide prevention and protection. Clean water and accessibility
+to
+clean water are essential to human life, that is important to preserve
+and
+promote to the best of our society\'s ability.
+
+-   [**Stakeholders:**]{.underline}
+
+Everyone is a stakeholder when it comes to a public health concern,
+especially drinking water. Since water is a necessity for survival,
+direct stakeholders to this issue include the general public, especially
+people living in regions that do not have efficient water systems and in
+areas that have a lower quality of water due to various factors.
+Indirect stakeholders to this issue are future generations that are
+reliant on high water quality to support their health and well-being.
+
+-   [**Harms and Benefits:**]{.underline}
+
+Possible benefits to high-quality
+water being available for everyone are that individual health is always
+kept as
+a priority and that populations across the globe are healthy and are
+able to
+maintain healthy lifestyles that keep the rest of society functioning.
+Moreover, some harms that may come from constructing better water
+systems and
+water quality are that it is expensive and may negatively impact the
+economy,
+as well as it different areas it may interfere with other environmental
+factors
+such as land or wildlife.
+
+References:
+
+<https://earthjustice.org/news/press/2022/over-fifty-groups-petition-epa-to-improve-oversight-of-water-pollution-from-concentrated-animal-feeding>
+
+<https://www.nature.com/articles/s41893-022-00985-7>
+
+<https://www.nature.com/articles/s43247-022-00554-y>
 
 ### Research Questions
 
