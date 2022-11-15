@@ -141,7 +141,7 @@ national and regional levels and also has a very extensive database
 covering the globe which makes the JMP a very credible source for data.\
 
 | **Data Set**           | **\# of Rows** | **\# of Columns** | **URL**                                   |
-|---------------|---------------|---------------|---------------------------|
+|------------------------|----------------|-------------------|-------------------------------------------|
 | Global Access to Water | 5070           | 8                 | <https://ourworldindata.org/water-access> |
 
 ### Limitations
