@@ -6,7 +6,8 @@ editor_options:
 
 # Deviation in United States' Water Quality: Project Proposal
 
-## Code name: *Contributors: Anumita Basani (Anumitab\@uw.edu), Diya Kumaran (Diyak2\@uw.edu), Eddy Wong (Eddyw206\@hotmail.com), Daniel Zhang (Danielz6\@uw.edu)*
+## Code name: Water
+*Contributors: Anumita Basani (Anumitab\@uw.edu), Diya Kumaran (Diyak2\@uw.edu), Eddy Wong (Eddyw206\@hotmail.com), Daniel Zhang (Danielz6\@uw.edu)*
 
 ### *INFO-201: Technical Foundations of Informatics - The Information School - University of Washington*
 
