@@ -14,16 +14,8 @@ editor_options:
 
 ### **Abstract**
 
--   \|Abstract \| Write a short abstract of three sentences. Your
-    abstract should summarize your entire project, but only the very
-    most important aspects. Here are two examples of how you might
-    structure your abstract: **(1)** "Our main question is .... This
-    question is important because .... To address the question, we will
-    ...." and **(2)** "We are concerned with ..., because .... To
-    address this concern, we plan to ...." \| \|Keywords \| 3-5 keywords
-    that summarize your project. (e.g., "Keywords: human physiology;
-    bicycle exercise; elderly; power and heart rate times-series data")
-    \|
+We are concerned with global water quality in comparison to the United States and how it fluctuates and stays the same. To address this concern, we plan to seek out data that will give us a good idea of the comparison between the global and national numbers so we can analyze the differences and determine what factors led to the discrepancies. This is an important concept because water quality remains a prevalent emerging issue in numerous cities across the country such as Reno, Pomona, and Arlington.  
+
 
 ### Keywords
 
