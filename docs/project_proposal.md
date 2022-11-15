@@ -14,8 +14,14 @@ editor_options:
 
 ### **Abstract**
 
-We are concerned with global water quality in comparison to the United States and how it fluctuates and stays the same. To address this concern, we plan to seek out data that will give us a good idea of the comparison between the global and national numbers so we can analyze the differences and determine what factors led to the discrepancies. This is an important concept because water quality remains a prevalent emerging issue in numerous cities across the country such as Reno, Pomona, and Arlington.  
-
+We are concerned with global water quality in comparison to the United
+States and how it fluctuates and stays the same. To address this
+concern, we plan to seek out data that will give us a good idea of the
+comparison between the global and national numbers so we can analyze the
+differences and determine what factors led to the discrepancies. This is
+an important concept because water quality remains a prevalent emerging
+issue in numerous cities across the country such as Reno, Pomona, and
+Arlington.
 
 ### Keywords
 
