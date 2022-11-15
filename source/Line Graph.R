@@ -6,6 +6,7 @@
 #implemented. This leads to us knowing that there are other factors that are an influence to access
 # to safe water, even with countries that would be categorized as similar.
 
+library(tidyverse)
 file <- "C:/Users/diyak/OneDrive/Documents/info201/assignments/project-danielz6/data/death-rates-unsafe-water.csv"
 death_data <- read.csv(file)
 
@@ -14,14 +15,14 @@ usa <- death_data %>%
   filter(as.numeric(Year) > 1999) %>%
   select (3,4)
 
-view(usa)
+#view(usa)
 
 aus <- death_data %>%
   filter(Entity == "Australia")  %>%
   filter(as.numeric(Year) > 1999) %>%
   select (3,4)
 
-view(aus)
+#view(aus)
 
 plot(usa$Year, usa$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate.,type = "o",col = "red", xlab = "Years", ylab = "Death Rate", 
      main = "Death Rate Trends [2000 - 2019]",
