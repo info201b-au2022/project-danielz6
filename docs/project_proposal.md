@@ -141,9 +141,7 @@ covering the globe which makes the JMP a very credible source for data.\
 | **Data Set**                  | **\# of Rows** | **\# of Columns** | **URL**                                   |
 |-------------------------------|----------------|-------------------|-------------------------------------------|
 | Access to Drinking Water      | 5070           | 8                 | <https://ourworldindata.org/water-access> |
-|-------------------------------|----------------|-------------------|-------------------------------------------|
 | Share Without Improved Water  | 5070           | 4                 | <https://ourworldindata.org/water-access> |
-|-------------------------------|----------------|-------------------|-------------------------------------------|
 | Death Rates From Unsafe Water | 6841           | 4                 | <https://ourworldindata.org/water-access> |
 
 ### Limitations
