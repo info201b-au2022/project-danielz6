@@ -9,7 +9,8 @@
 file <- "C:/Users/diyak/OneDrive/Documents/info201/assignments/project-danielz6/data/death-rates-unsafe-water.csv"
 death_data <- read.csv(file)
 
-filter(Entity == "United States") %>%
+usa <- death_data %>%
+  filter(Entity == "United States") %>%
   filter(as.numeric(Year) > 1999) %>%
   select (3,4)
 
@@ -22,11 +23,11 @@ aus <- death_data %>%
 
 view(aus)
 
-plot(usa$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate.,type = "o",col = "red", xlab = "Years", ylab = "Death Rate", 
+plot(usa$Year, usa$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate.,type = "o",col = "red", xlab = "Years", ylab = "Death Rate", 
      main = "Death Rate Trends [2000 - 2019]",
      ylim=c(0.02,0.15))
 
-lines(aus$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate., type = "o", col = "blue")
+lines(aus$Year, aus$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate., type = "o", col = "blue")
 
 #legend(x=topright,y=0.92, legend=c("Equation 1", "Equation 2"), fill = c("blue","red"))
 legend( x= "topleft", y=0.92,
