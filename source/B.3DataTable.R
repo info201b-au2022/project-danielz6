@@ -9,10 +9,10 @@ library(tidyverse)
 data <- "C:/Users/eddyw/Documents/Info 201/access-drinking-water-stacked.csv"
 wateraccessdata <- read.csv(data)
 
-lowest_sm_facilities <- wateraccessdata %>%
-  group_by(Entity) %>%
-  filter(Year == max(Year)) %>%
-  filter(wat_sm == min(wat_sm)) %>%
-  pull(Entity, wat_sm)
+avg_for_all_2020 <- wateraccessdata %>% 
+  drop_na() %>% 
+  filter(Year == 2020) %>%
+  group_by(Code) %>%
+  summarise(avg_sm = mean(wat_sm), avg_bas = mean(wat_bas_minus_sm), avg_lim = mean(wat_lim), avg_unimp = mean(wat_unimp), avg_no_access = mean(wat_sur))
 
-round(prop.table(table(wateraccessdata$wat_sm)), 2)
+data_table <- table(avg_for_all_2020$Code)
