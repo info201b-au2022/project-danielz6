@@ -139,21 +139,41 @@ national and regional levels and also has a very extensive database
 covering the globe which makes the JMP a very credible source for data.\
 
 | **Data Set**           | **\# of Rows** | **\# of Columns** | **URL**                                   |
-|------------------------|----------------|-------------------|-------------------------------------------|
+|---------------|---------------|---------------|---------------------------|
 | Global Access to Water | 5070           | 8                 | <https://ourworldindata.org/water-access> |
 
 ### Limitations
 
--   \|Limitations \| Proposal only. What limitations might you need to
-    address? Briefly discuss. (About 150 words.) \|
+The implications of global access to water relies heavily on politics,
+and therefore
+policymakers. Without global support and commitment, it is an impossible
+mission
+for one individual country, or even multiplecountries to accomplish. In
+addition, technology advancements would make the push for access to
+clean water much easier. With new advancements in sanitation or
+cleaning water, it allows us to more efficiently andeconomically create
+systems for clean water. For example, a system to process excreta or
+urine would allow ether energy generation or a renewable water
+source.
+
+ <https://www.csis.org/analysis/importance-water-foreign-policy>
+
+ <https://www.weforum.org/agenda/2022/08/access-clean-water-inequality-financing/>
 
 ### Findings
 
--   \|*Findings* \| *Not for the project proposal; for final report
-    only. Give answers to each of your research questions. (About 400
-    words.)* \|
+A limitation of this data is that this data is from 2019.
+Things could have changed between then and now, such as technological
+advancements that would allow us to make exponentially faster progress.
+There are also a some areas that data is not collected, but these are
+not counted into the total at all. On the visuals, they are shown as
+white. Another possible limitation is the arbitrary definitions of all
+of
+the classifications of accessibility, such as "basic",
+"limited", and "improved". These may conflict or be different
+than other reports and the definitions may be different.
 
-### Discussion
+Discussion
 
 -   \|*Discussion* \| *Not for the project proposal; for final report
     only. Discuss importance and/or implications of your findings (About
