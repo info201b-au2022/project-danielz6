@@ -117,8 +117,9 @@ locally and globally.
 
 ### The Dataset
 
-This data set provides global population data that has access to safe
-and managed drinking water. This is related to our research question,
+These three data sets provides global population data that has access to safe
+drinking water, population percentage who doesn't have access, and lastly data
+on the death rates from unsafe drinking water. These data sets are related to our research question,
 "What factors cause the state of the water quality in the US?", as it
 shows what factors are involved in each country for their current water
 access/quality. The data set is provided/collected by WHO/UNICEF Joint
