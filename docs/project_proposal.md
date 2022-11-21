@@ -6,7 +6,7 @@ editor_options:
 
 # Deviation in United States' Water Quality: Project Proposal
 
-## Code name: *Contributors: Anumita Basani (Anumitab\@uw.edu), Diya Kumaran (Diyak2\@uw.edu), Eddy Wong (Eddyw206\@hotmail.com), Daniel Zhang (Danielz6\@uw.edu)*
+## Code name: Water *Contributors: Anumita Basani (Anumitab\@uw.edu), Diya Kumaran (Diyak2\@uw.edu), Eddy Wong (Eddyw206\@hotmail.com), Daniel Zhang (Danielz6\@uw.edu)*
 
 ### *INFO-201: Technical Foundations of Informatics - The Information School - University of Washington*
 
@@ -117,33 +117,14 @@ locally and globally.
 
 ### The Dataset
 
-These three data sets provides global population data that has access to safe
-drinking water, population percentage who doesn't have access, and lastly data
-on the death rates from unsafe drinking water. These data sets are related to our research question,
-"What factors cause the state of the water quality in the US?", as it
-shows what factors are involved in each country for their current water
-access/quality. The data set is provided/collected by WHO/UNICEF Joint
-Monitoring Programme (JMP) for Water Supply and Sanitation. The JMP
-database has 5,000+ national data sources with information on WASH. This
-includes nationally representative household surveys, censuses and
-administrative reports. This data set includes data starting from the
-year 2000 to 2020. Its purpose is to show global statistics of water
-access and how they differ in different regions of the world.The JMP's
-four main objectives for collecting data is as it states on their
-official website, "The JMP strategy comprises four main objectives which
-include consolidating its normative function and its role as a global
-custodian of WASH data, further strengthening country support, and
-promoting a more integrated approach to monitoring WASH and related
-issues in collaboration with other agencies." The JMP is the leading
-source when it comes to comparing estimates of progress at the global,
-national and regional levels and also has a very extensive database
-covering the globe which makes the JMP a very credible source for data.\
+Our four datasets include data on access to drinking water, share of population without improved water sources, deaths by risk factors, and death rates from unsafe drinking water. We can answer our research question by using these datasets, “Which factors caused the United States' current standing in terms of global water quality? '' as it shows the standings of different water sanitation levels around the world. The dataset specifically, “Access to Drinking Water”, shows global data on the population’s water sanitation levels.The levels of water sanitation include Safely Managed (SM), Basic (Bas_minus_sm), Limited (Lim), Unimproved (Unimp), and lastly No access (Sur). These data sets are on the “Ourworldindata.org” website and the data is provided/collected by WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply and Sanitation. The JMP database has 5,000+ national data sources with information on WASH. This includes nationally representative household surveys, censuses and administrative reports. These datasets include global data starting from the year 2000 to 2020. The data’s purpose is to show global statistics of water access and how they differ across different regions of the globe are presented in this report. Listed on their official website, the JMP's four main objectives for collecting data regarding water sanitation and access is, "The JMP strategy comprises four main objectives which include consolidating its normative function and its role as a global custodian of WASH data, further strengthening country support, and promoting a more integrated approach to monitoring WASH and related issues in collaboration with other agencies." The JMP is the leading source when it comes to comparing estimates of progress at the global, national and regional levels and also has a very extensive database covering the globe thereby making the JMP an extremely reliable data source.
 
-| **Data Set**                  | **\# of Rows** | **\# of Columns** | **URL**                                   |
-|-------------------------------|----------------|-------------------|-------------------------------------------|
-| Access to Drinking Water      | 5070           | 8                 | <https://ourworldindata.org/water-access> |
-| Share Without Improved Water  | 5070           | 4                 | <https://ourworldindata.org/water-access> |
-| Death Rates From Unsafe Water | 6841           | 4                 | <https://ourworldindata.org/water-access> |
+| **Data Set**                    | **\# of Rows** | **\# of Columns** | **URL**                                   |
+|---------------------------------|----------------|-------------------|-------------------------------------------|
+| Access to Drinking Water        | 5070           | 8                 | <https://ourworldindata.org/water-access> |
+| Share Without Improved Water    | 5070           | 4                 | <https://ourworldindata.org/water-access> |
+| Death Rates From Unsafe Water   | 6841           | 4                 | <https://ourworldindata.org/water-access> |
+| Number of deaths by risk factors| 6841           | 31                | <https://ourworldindata.org/water-access> |
 
 ### Limitations
 
