@@ -1,18 +1,63 @@
 # The global access to drinking water are visualized in this data table. There are different levels of standards for their 
 # facilities; Safely Managed, Basic, Limited, Unimproved, and No access (Surface Water Only).
 # Shown in the columns are the percentage of the globe's data on their access to a drinking water facility. 
-# Starting from 2020 back to 2000, data is presented in five-year intervals. This data table is important in visualizing the 
-# improvement of global access to drinking water facilities over the past ~two decades.
+# This data table is important in visualizing the most current year (2020) of
+# the data set of global access to drinking water facilities.
 
 library(dplyr)
 library(tidyverse)
-data <- "C:/Users/eddyw/Documents/Info 201/access-drinking-water-stacked.csv"
+data <- "C:/Users/eddyw/Documents/Info 201/project-danielz6/data/access-drinking-water-stacked.csv"
 wateraccessdata <- read.csv(data)
 
-avg_for_all_2020 <- wateraccessdata %>% 
-  drop_na() %>% 
-  filter(Year == 2020) %>%
+USA_2020 <- wateraccessdata %>%
+  drop_na() %>%
   group_by(Code) %>%
-  summarise(avg_sm = mean(wat_sm), avg_bas = mean(wat_bas_minus_sm), avg_lim = mean(wat_lim), avg_unimp = mean(wat_unimp), avg_no_access = mean(wat_sur))
+  filter(Code == "USA") %>% 
+  filter(Year == 2020) %>%
+  summarise(Safely_Managed = sum(wat_sm), Basic = sum(wat_bas_minus_sm), Limited = sum(wat_lim), Unimproved = sum(wat_unimp), No_Access = sum(wat_sur))
 
-data_table <- table(avg_for_all_2020$Code)
+UGA_2020 <- wateraccessdata %>%
+  drop_na() %>%
+  group_by(Code) %>%
+  filter(Code == "UGA") %>% 
+  filter(Year == 2020) %>%
+  summarise(Safely_Managed = sum(wat_sm), Basic = sum(wat_bas_minus_sm), Limited = sum(wat_lim), Unimproved = sum(wat_unimp), No_Access = sum(wat_sur))
+
+NZL_2020 <- wateraccessdata %>%
+  drop_na() %>%
+  group_by(Code) %>%
+  filter(Code == "NZL") %>% 
+  filter(Year == 2020) %>%
+  summarise(Safely_Managed = sum(wat_sm), Basic = sum(wat_bas_minus_sm), Limited = sum(wat_lim), Unimproved = sum(wat_unimp), No_Access = sum(wat_sur))
+
+MEX_2020 <- wateraccessdata %>%
+  drop_na() %>%
+  group_by(Code) %>%
+  filter(Code == "MEX") %>% 
+  filter(Year == 2020) %>%
+  summarise(Safely_Managed = sum(wat_sm), Basic = sum(wat_bas_minus_sm), Limited = sum(wat_lim), Unimproved = sum(wat_unimp), No_Access = sum(wat_sur))
+
+CAN_2020 <- wateraccessdata %>%
+  drop_na() %>%
+  group_by(Code) %>%
+  filter(Code == "CAN") %>% 
+  filter(Year == 2020) %>%
+  summarise(Safely_Managed = sum(wat_sm), Basic = sum(wat_bas_minus_sm), Limited = sum(wat_lim), Unimproved = sum(wat_unimp), No_Access = sum(wat_sur))
+
+GBR_2020 <- wateraccessdata %>%
+  drop_na() %>%
+  group_by(Code) %>%
+  filter(Code == "GBR") %>% 
+  filter(Year == 2020) %>%
+  summarise(Safely_Managed = sum(wat_sm), Basic = sum(wat_bas_minus_sm), Limited = sum(wat_lim), Unimproved = sum(wat_unimp), No_Access = sum(wat_sur))
+
+PRK_2020 <- wateraccessdata %>%
+  drop_na() %>%
+  group_by(Code) %>%
+  filter(Code == "PRK") %>% 
+  filter(Year == 2020) %>%
+  summarise(Safely_Managed = sum(wat_sm), Basic = sum(wat_bas_minus_sm), Limited = sum(wat_lim), Unimproved = sum(wat_unimp), No_Access = sum(wat_sur))
+
+data_table_2020 <- rbind(NZL_2020, GBR_2020, CAN_2020, USA_2020, PRK_2020, MEX_2020, UGA_2020)
+colnames(data_table_2020)[1] <- "Country"
+view(data_table_2020)
