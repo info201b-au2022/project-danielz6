@@ -59,5 +59,11 @@ PRK_2020 <- wateraccessdata %>%
   summarise(Safely_Managed = sum(wat_sm), Basic = sum(wat_bas_minus_sm), Limited = sum(wat_lim), Unimproved = sum(wat_unimp), No_Access = sum(wat_sur))
 
 data_table_2020 <- rbind(NZL_2020, GBR_2020, CAN_2020, USA_2020, PRK_2020, MEX_2020, UGA_2020)
+
 colnames(data_table_2020)[1] <- "Country"
+
+knitr::kable(head(data_table_2020[, 1:5]), "pipe")
+
 view(data_table_2020)
+
+
