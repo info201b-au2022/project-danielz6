@@ -19,6 +19,27 @@ death_data <- read.csv(file)
 
 x_values <- c("NZL", "DEU", "KOR", "FRA", "CAN", "JPN", "NOR", "USA", "HUN", "MNE", "PSE", "RUS", "COL", "ECU", "NIC", "PHL", "MEX", "PAK", "NGA", "ETH")
 
+water_access_by_country <- function(Code) {
+  water_access <- wateraccessdata[wateraccessdata$Code %in% c('USA', "NOR", "PAK", "NGA", "NIC", "MNE", "RUS", "COL", "KOR", "PHL", "PSE", "MEX", "CAN", "FRA", "DEU", "JPN", "HUN", "ECU", "NZL", "ETH"), ] %>% 
+    filter(Year == "2020") %>% 
+    group_by(Code) %>% 
+    summarise(Safely_Managed_Water = sum(wat_sm)) %>% 
+    return(Safely_Managed_Water)
+}
+
+x_values <- c("NZL", "DEU", "KOR", "FRA", "CAN", "JPN", "NOR", "USA", "HUN", "MNE", "PSE", "RUS", "COL", "ECU", "NIC", "PHL", "MEX", "PAK", "NGA", "ETH")
+
+plot_water_access_by_country <- function() {
+  bar_chart <- ggplot(water_access_by_country(Code), aes(x = Code, y = Safely_Managed_Water)) +
+    geom_bar(stat = "identity", fill = "lightblue", color = "black") +
+    scale_x_discrete(limits = x_values) +
+    labs(x = "Country Code", y = "Percentage of Safely Managed Water (2020)", title = "Safely Managed Water Access by Country") +
+    theme(panel.background = element_rect(fill = "gray"), panel.grid.major = element_line(color = "white"))
+  return(bar_chart)
+}
+
+plot_water_access_by_country()
+
 country_names <- death_data %>%
   filter(Entity == unique(death_data$Entity)) %>%
   select(Entity)
