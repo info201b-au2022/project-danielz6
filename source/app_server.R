@@ -33,7 +33,7 @@ input_year_chart3b <- selectInput(
 
 
 
-#selectInput("country1", 
+#selectInput("country1",
 ##            "Select Country:", choices = country_names, selected = "United States"),
 #selectInput("country2",
 #            "Select Country:", choices = country_names, selected = "Australia"),
@@ -50,29 +50,29 @@ filter(as.numeric(Year) > 1999) %>%
   select(3,4)
 
 plot_water_deaths <- function() {
-  plot(df2$Year, df2$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate.,type = "o",col = "red", xlab = "Years", ylab = "Death Rate", 
+  plot(df2$Year, df2$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate.,type = "o",col = "red", xlab = "Years", ylab = "Death Rate",
        main = "Death Rate Trends [2000 - 2019]",
        ylim=c(0.02,0.15),
        xlim = c(2000,2019))
 
-  
+
   lines(df3$Year, df3$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate., type = "o", col = "blue")
-  
+
   #legend(x=topright,y=0.92, legend=c("Equation 1", "Equation 2"), fill = c("blue","red"))
   legend( x= "topleft", y=0.92,
           legend=c("Australia","United States"),
           col=c("blue", "red"),
           pch=c("-","-", "-", "-"))
-  
+
 }
 plot_water_deaths()
 
 server <- function(input, output) {
   data_by_year <- reactive({
-    wateraccessdata[wateraccessdata$Code %in% c('USA', "NOR", "PAK", "NGA", "NIC", "MNE", "RUS", "COL", "KOR", "PHL", "PSE", "MEX", "CAN", "FRA", "DEU", "JPN", "HUN", "ECU", "NZL", "ETH"), ] %>% 
-      group_by(Code) %>% 
-      filter(as.numeric(Year) == as.numeric(input$Year)) %>% 
-      summarise(Safely_Managed_Water = sum(wat_sm)) %>% 
+    wateraccessdata[wateraccessdata$Code %in% c('USA', "NOR", "PAK", "NGA", "NIC", "MNE", "RUS", "COL", "KOR", "PHL", "PSE", "MEX", "CAN", "FRA", "DEU", "JPN", "HUN", "ECU", "NZL", "ETH"), ] %>%
+      group_by(Code) %>%
+      filter(as.numeric(Year) == as.numeric(input$Year)) %>%
+      summarise(Safely_Managed_Water = sum(wat_sm)) %>%
       return(Safely_Managed_Water)
   })
   output$plot_water_access_by_country <- renderPlot({
@@ -93,11 +93,3 @@ server <- function(input, output) {
  #   x <- ggplot +
  #     geom_col(mapping = aes(x = year, y = .data[[input$data]]),
  #              color = input$color)
-    
-    
-  
-
-
-
-
-
