@@ -25,12 +25,10 @@ tab_panel_chart3 <-tabPanel(
  #     "Select Country:", choices = country_names, selected = "United States"),
 #    selectInput("country2",
  #               "Select Country:", choices = country_names, selected = "Australia"),
-),
-mainPanel(
-    plot_water_deaths()
-)
+)#,
+#mainPanel(
+#    plot_water_deaths()
+#)
 
 )
-
-View(country_names)
 

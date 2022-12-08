@@ -19,7 +19,9 @@ death_data <- read.csv(file)
 
 x_values <- c("NZL", "DEU", "KOR", "FRA", "CAN", "JPN", "NOR", "USA", "HUN", "MNE", "PSE", "RUS", "COL", "ECU", "NIC", "PHL", "MEX", "PAK", "NGA", "ETH")
 
-
+country_names <- death_data %>%
+  filter(Entity == unique(death_data$Entity)) %>%
+  select(Entity)
 
 #selectInput("country1",
 ##            "Select Country:", choices = country_names, selected = "United States"),
