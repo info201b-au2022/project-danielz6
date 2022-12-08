@@ -46,7 +46,7 @@ to protect similar to the EPA's national standard.
 
 ### **Problem Domain**
 
--   [**Project Framing:**]{.underline}
+-   [**Project Framing:**]
 
 Our project examines the US' water quality and systems in seeing what
 factors and aspects contribute to the water systems and sanitation and
@@ -63,7 +63,7 @@ health issues, including gastrointestinal illness, reproductive
 problems, and neurological disorders. Young children, pregnant women,
 and people with weaker immune systems are at risk for illness.
 
--   [**Human Values:**]{.underline}
+-   [**Human Values:**]
 
 Public health and safety are essential to society and for human
 survival, aiming to improve our quality of life, helps children succeed,
@@ -73,7 +73,7 @@ prevention and protection. Clean water and accessibility to clean water
 are essential to human life, that is important to preserve and promote
 to the best of our society's ability.
 
--   [**Stakeholders:**]{.underline}
+-   [**Stakeholders:**]
 
 Everyone is a stakeholder when it comes to a public health concern,
 especially drinking water. Since water is a necessity for survival,
@@ -83,7 +83,7 @@ areas that have a lower quality of water due to various factors.
 Indirect stakeholders to this issue are future generations that are
 reliant on high water quality to support their health and well-being.
 
--   [**Harms and Benefits:**]{.underline}
+-   [**Harms and Benefits:**]
 
 Possible benefits to high-quality water being available for everyone are
 that individual health is always kept as a priority and that populations
@@ -96,24 +96,18 @@ as land or wildlife.
 
 ### Research Questions
 
-Our first research question is which factors caused the United States'
-current standing in terms of global water quality? This is important
-because if we are able to understand the reasons for this then we can
-work towards changing that so we can drastically improve the water
-quality. The motivation for the question is that the presence of
-contaminants in cities around the U.S. has led to severe health issues
-for the people living there so determining the leading factors is
-essential. The second research question is how do socioeconomic factors
-influence water quality in the U.S. and other countries? The reason that
-this is important is because the social and economic aspects of this
-major health problem have contributed heavily to it so now that we
-identified the issues, it's easier to prevent them from influencing
-water quality which is what motivates this inquiry. Our third research
-question is why should we prioritize water quality as a serious
-environmental issue on a local and global scale? This is important to
-explore because there are numerous other issues to focus on and the
-motivation for this is to understand the depth of this problem both
-locally and globally.
+What is the United States water access ranking compared to other countries?
+
+This is important because if we are able to understand the reasons for this then we can work towards changing that so we can drastically improve the water quality throughout the country. The motivation for the question is that the presence of contaminants in cities around the U.S. has led to severe health issues for the people living there so determining the leading factors is essential.
+
+ How does the US water ranking compare to Canadas?
+
+The reason that this is important as through comparing the US to another country that is close in geographic location and similar socioeconomically, we are able to analyze the water health and further identify what is contributing to each country’s ranking and potentially create solutions to prevent those identified factors from influencing poor water quality.
+
+What is the overall trend in deaths from poor water quality over the years?
+
+This is important to explore because it examines a major impact of poorer water quality and sanitation systems, and emphasizes the need for reformed water quality standards, or other solutions that minimize the high counts of death from this issue. The motivation for this is to understand the depth of this problem both locally and globally.
+
 
 ### The Dataset
 
@@ -126,48 +120,28 @@ Our four datasets include data on access to drinking water, share of population 
 | Death Rates From Unsafe Water   | 6841           | 4                 | <https://ourworldindata.org/water-access> |
 | Number of deaths by risk factors| 6841           | 31                | <https://ourworldindata.org/water-access> |
 
-### Limitations
-
-The implications of global access to water relies heavily on politics,
-and therefore
-policymakers. Without global support and commitment, it is an impossible
-mission
-for one individual country, or even multiplecountries to accomplish. In
-addition, technology advancements would make the push for access to
-clean water much easier. With new advancements in sanitation or
-cleaning water, it allows us to more efficiently andeconomically create
-systems for clean water. For example, a system to process excreta or
-urine would allow ether energy generation or a renewable water
-source.
-
- <https://www.csis.org/analysis/importance-water-foreign-policy>
-
- <https://www.weforum.org/agenda/2022/08/access-clean-water-inequality-financing/>
-
 ### Findings
+From our research, we are able to see multiple patterns and examine various trends that occur from water sanitation and quality in the US, and compare that on a global scale.
 
-A limitation of this data is that this data is from 2019.
-Things could have changed between then and now, such as technological
-advancements that would allow us to make exponentially faster progress.
-There are also a some areas that data is not collected, but these are
-not counted into the total at all. On the visuals, they are shown as
-white. Another possible limitation is the arbitrary definitions of all
-of
-the classifications of accessibility, such as "basic",
-"limited", and "improved". These may conflict or be different
-than other reports and the definitions may be different.
+What is the United States water access ranking compared to other countries?
 
-Discussion
+In the most recent year (2020) of the dataset, The United States' safely managed water access ranks among the top compared to other countries. Although it is not 100 percent like some other countries,  it is close at 97.33 percent of the population having safely managed water access.
 
--   \|*Discussion* \| *Not for the project proposal; for final report
-    only. Discuss importance and/or implications of your findings (About
-    400 words.)* \|
+How does the US water ranking compare to Canadas?
+
+
+What is the overall trend in deaths from poor water quality over the years?
+
+
+### Discussion
+Overall, the importance of this issue only increases with time, as water is essential need for survival, and many international organizations use access to safe drinking water and safely managed sanitation facilities as a measure of progress against poverty, disease, and death. As the CDC states, “Access to these services by every man, woman, and child is also considered a human right, not a privilege. Though progress has been made to provide safe drinking water and sanitation to people throughout the world, billions of people still lack access to these services every day.” Many countries face challenges in providing strong sanitation practices and infrastructures for their populations. Communities need to stay healthy in order for other aspects of society to function, and at an individual level, the healthier we are, our life expectancy can improve, and we are overall able to build a healthier, more sustainable environment for the current population as well as populations in the future. It greatly influences our health at an individual level, community level, and societal level, and is a huge determinant of how the world population is growing.  
+
+Improved water supply and sanitation, and better management of water resources, can boost countries' economic growth and can contribute greatly to poverty reduction. Clean water and accessibility to clean water are essential to human life, that is important to preserve and promote to the best of our society's ability.
 
 ### Conclusion
+Moreover, the global public health issue of water quality and sanitation remains a global health crisis. From a scientific perspective, research clearly states that a human being can survive more than three weeks without food, but where water is concerned most people cannot go days without it. Dehydration from lack of food and water is dangerous, thus emphasizing that water is a key necessity. Without it, our communities will not be able to survive. From our research and analysis, we are able to see how various countries stand in terms of water quality and sanitation, particularly focusing on the US as we know that there are several policies and standards such as the Safe Water Drinking Act so seeing this ranking aids in putting in to perspective the true state of the public health. Additionally, we are aware and want to emphasize that there are billions of people around the world who do not have access to clean drinking water.  
 
--   \|*Conclusion* \| *Not for the project proposal; for final report
-    only. Give the reader a summary point, the key point that you will
-    like your audience to leave with. (About 400 words.)* \|
+In developed nations, such as the US and Canada, clean water is considered natural and is a right, and most people from advanced countries such as these may not pay attention to the fact that access to clean water is a grave crisis around the world. There are still many nations that do not have access to clean water sources that are safe for human consumption, as according to the research done by the World Health Organization, “approximately 2.1 billion people all over the world still are unable to access safe water sources within their home.” Other research has indicated that in New York, USA, 8.3 million people were exposed to water contaminants in their drinking water that included viruses and various kinds of bacteria. Along with more than 63 million people in India alone have consumed water from unsafe sources, and in Nepal, 91% of the population is drinking water from sources that contain E-coli bacteria that cause dangerous infections. Overall, it is greatly important to preserve and promote clean water systems and accessibility to these systems to the best of our society's ability, now and in the future.
 
 ### References
 
@@ -177,12 +151,6 @@ Discussion
 
 <https://www.nature.com/articles/s43247-022-00554-y>
 
-### Acknowledgements
+<https://www.csis.org/analysis/importance-water-foreign-policy>
 
-Thank you to our TA, Ishita, for providing us with examples of research
-questions and helping us with this initial stage of the project.
-
-### Appendix A: Questions
-
-Our project group has no questions for our TA or instructor at this
-time.
+ <https://www.weforum.org/agenda/2022/08/access-clean-water-inequality-financing/>

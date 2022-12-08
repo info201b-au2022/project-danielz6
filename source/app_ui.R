@@ -104,7 +104,8 @@ tab_panel_chart1 <- sidebarPanel(
 page2_sidebar_content <- sidebarPanel(
 )
   page_2__main_content <- mainPanel(
-    h4("3 Takeaways"),
+    h4("3 Major Takeaways"),
+    
     p("The US stands higher compared to most countries; however it is not the highest globally, and it is important to know that factors such geographic location, proximity to massive water bodies, and the infrastructure system and set up of a particular region all contribute to ranking of a country in this context."),
     p("Though progress has been made to provide safe drinking water and sanitation to people throughout the world, billions of people still lack access to these services every day.” Many countries face challenges in providing strong sanitation practices and infrastructures for their populations. Improved water supply and sanitation, and better management of water resources, can boost countries' economic growth and can contribute greatly to poverty reduction
 "),
