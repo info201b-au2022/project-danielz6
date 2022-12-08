@@ -14,7 +14,40 @@ library(dplyr)
 data <- "https://raw.githubusercontent.com/info201b-au2022/project-danielz6/main/data/access-drinking-water-stacked.csv"
 wateraccessdata <- read.csv(data)
 
+file <- "/Users/danielzhang/Documents/info201/Projects/Untitled/project-danielz6/data/death-rates-unsafe-water.csv"
+death_data <- read.csv(file)
+
 x_values <- c("NZL", "DEU", "KOR", "FRA", "CAN", "JPN", "NOR", "USA", "HUN", "MNE", "PSE", "RUS", "COL", "ECU", "NIC", "PHL", "MEX", "PAK", "NGA", "ETH")
+
+input_year_chart3 <- selectInput(
+  inputId = "country_input",
+  label = "Select Country 1",
+  choices = country_names,
+  selected = "United States")
+
+input_year_chart3b <- selectInput(
+  inputId = "country_input2",
+  label = "Select Country 2",
+  choices = country_names,
+  selected = "Australia")
+
+
+
+#selectInput("country1", 
+##            "Select Country:", choices = country_names, selected = "United States"),
+#selectInput("country2",
+#            "Select Country:", choices = country_names, selected = "Australia"),
+
+
+df2 <- death_data %>%
+  filter(Entity == input$country_input) %>%
+filter(as.numeric(Year) > 1999) %>%
+  select(3,4)
+
+df3 <- death_data %>%
+  filter(Entity == nput$country_input2) %>%
+filter(as.numeric(Year) > 1999) %>%
+  select(3,4)
 
 plot_water_deaths <- function() {
   plot(df2$Year, df2$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate.,type = "o",col = "red", xlab = "Years", ylab = "Death Rate", 
