@@ -98,7 +98,7 @@ page2_sidebar_content <- sidebarPanel(
     p("3")
   )  
   page2_panel <- tabPanel(
-    "Key Takwaways", titlePanel("Title"),
+    "Key Takeaways", titlePanel("Title"),
     page_2__main_content
     )
 #Intro and Summary displays on app  
