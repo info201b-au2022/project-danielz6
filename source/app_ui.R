@@ -59,16 +59,15 @@ source("tabs/tab_panel_report.R")
     p("Possible benefits to high-quality water being available for everyone are that individual health is always kept as a priority and that populations across the globe are healthy and are able to maintain healthy lifestyles that keep the rest of society functioning. Moreover, some harms that may come from constructing better water systems and water quality are that it is expensive and may negatively impact the economy, as well as it different areas it may interfere with other environmental factors such as land or wildlife."),
     h3("Research Questions"),
     p("What is the United States water access ranking compared to other countries? 
-    
-      This is important because if we are able to understand the reasons for this then we can work towards changing that so we can drastically improve the water quality. The motivation for the question is that the presence of contaminants in cities around the U.S. has led to severe health issues for the people living there so determining the leading factors is essential.
+      This is important because if we are able to understand the reasons for this then we can work towards changing that so we can drastically improve the water quality throughout the country. The motivation for the question is that the presence of contaminants in cities around the U.S. has led to severe health issues for the people living there so determining the leading factors is essential.
  
-      How do socioeconomic factors influence water quality in the U.S. and other countries? *EDIT
-      
-      The reason that this is important is because the social and economic aspects of this major health problem have contributed heavily to it so now that we identified the issues, it's easier to prevent them from influencing water quality which is what motivates this inquiry. 
+      How does the US water ranking compare to Canadas? 
 
-      Why should we prioritize water quality as a serious environmental issue on a local and global scale? *EDIT
-      
-      This is important to explore because there are numerous other issues to focus on and the motivation for this is to understand the depth of this problem both locally and globally.
+      The reason that this is important as through comparing the US to another country that is close in geographic location and similar in socioeconomical structures, we are able to analyze the water health and further identify what is contributing to each country’s ranking and potentially create solutions to prevent those identified factors from influencing poor water quality.
+
+      What is the overall trend in deaths from poor water quality over the years?
+
+      This is important to explore because it examines a major impact of poorer water quality and sanitation systems, and emphasizes the need for reformed water quality standards, or other solutions that minimize the high counts of death from this issue. The motivation for this is to understand the depth of this problem both locally and globally.
 "),
     
     img(src = "https://thehill.com/wp-content/uploads/sites/2/2021/04/ca_water_pollution_environment.jpg?w=1280&h=720&crop=1", height = 400, width = 600),
@@ -104,13 +103,15 @@ tab_panel_chart1 <- sidebarPanel(
 page2_sidebar_content <- sidebarPanel(
 )
   page_2__main_content <- mainPanel(
-    h4("3 Takeaways"),
-    p("1"),
-    p("2"),
-    p("3")
+    h4("3 Major Takeaways"),
+    
+    p("The US stands higher compared to most countries; however it is not the highest globally, and it is important to know that factors such geographic location, proximity to massive water bodies, and the infrastructure system and set up of a particular region all contribute to ranking of a country in this context."),
+    p("Though progress has been made to provide safe drinking water and sanitation to people throughout the world, billions of people still lack access to these services every day.” Many countries face challenges in providing strong sanitation practices and infrastructures for their populations. Improved water supply and sanitation, and better management of water resources, can boost countries' economic growth and can contribute greatly to poverty reduction
+"),
+    p("Water sanitation is an issue that falls into the category of public health with a focus on community-wide protection. It influences our health at an individual level, community level, and societal level, and is a huge determinant of population health and we should advocate for more stable and stronger policies, standards, and systems that improve the quality of water globally.")
   )  
   page2_panel <- tabPanel(
-    "Key Takeaways", titlePanel("Title"),
+    "Key Takeaways", titlePanel("Summary of Research"),
     page_2__main_content
     )
 #Intro and Summary displays on app  
