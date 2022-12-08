@@ -5,17 +5,17 @@
 # in comparison to the US or UK, which is caused by multiple factors such as economical stability
 # and infrastructure barriers that make it harder for water sanitation and systems to be implemented there. 
 
-file <- "C:/Users/diyak/OneDrive/Documents/info201/assignments/project-danielz6/data/death-rates-unsafe-water.csv"
+file <- "/Users/danielzhang/Documents/info201/Projects/Untitled/project-danielz6/data/death-rates-unsafe-water.csv"
 
 death_data <- read.csv(file)
-
+View(death_data)
 total_deaths_by_country <- death_data %>%
   group_by(Entity) %>%
   summarise( Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate. = sum(Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate.)) %>%
   #  filter(grepl('Afghanistan|Africa|United States|Unites Kingdom|Mexico', Entity, fixed = TRUE))  
   filter(Entity %in% c("Afghanistan","African Region (WHO)","United States","United Kingdom","Mexico"))
 
-view(total_deaths_by_country)
+View(total_deaths_by_country)
 barplot(total_deaths_by_country$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate.,
         names=c("Afghanistan","African Region (WHO)","United States","Unites Kingdom","Mexico"),
         las = 2,
