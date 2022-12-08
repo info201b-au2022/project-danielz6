@@ -19,18 +19,6 @@ death_data <- read.csv(file)
 
 x_values <- c("NZL", "DEU", "KOR", "FRA", "CAN", "JPN", "NOR", "USA", "HUN", "MNE", "PSE", "RUS", "COL", "ECU", "NIC", "PHL", "MEX", "PAK", "NGA", "ETH")
 
-input_year_chart3 <- selectInput(
-  inputId = "country_input",
-  label = "Select Country 1",
-  choices = country_names,
-  selected = "United States")
-
-input_year_chart3b <- selectInput(
-  inputId = "country_input2",
-  label = "Select Country 2",
-  choices = country_names,
-  selected = "Australia")
-
 
 
 #selectInput("country1",
@@ -60,7 +48,7 @@ plot_water_deaths <- function() {
 
   #legend(x=topright,y=0.92, legend=c("Equation 1", "Equation 2"), fill = c("blue","red"))
   legend( x= "topleft", y=0.92,
-          legend=c("Australia","United States"),
+          legend=c("input_year_chart3","input_year_chart3b"),
           col=c("blue", "red"),
           pch=c("-","-", "-", "-"))
 
