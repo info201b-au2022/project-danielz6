@@ -40,12 +40,12 @@ input_year_chart3b <- selectInput(
 
 
 df2 <- death_data %>%
-  filter(Entity == input$country_input) %>%
+  filter(Entity == input_year_chart3) %>%
 filter(as.numeric(Year) > 1999) %>%
   select(3,4)
 
 df3 <- death_data %>%
-  filter(Entity == nput$country_input2) %>%
+  filter(Entity == input_year_chart3b) %>%
 filter(as.numeric(Year) > 1999) %>%
   select(3,4)
 
