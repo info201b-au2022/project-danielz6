@@ -11,7 +11,7 @@ library(shiny)
 library(ggplot2)
 library(dplyr)
 
-data <- "C:/Users/danielzhang/Documents/Info 201/project-danielz6/data/access-drinking-water-stacked.csv"
+data <- "https://raw.githubusercontent.com/info201b-au2022/project-danielz6/main/data/access-drinking-water-stacked.csv"
 wateraccessdata <- read.csv(data)
 
 x_values <- c("NZL", "DEU", "KOR", "FRA", "CAN", "JPN", "NOR", "USA", "HUN", "MNE", "PSE", "RUS", "COL", "ECU", "NIC", "PHL", "MEX", "PAK", "NGA", "ETH")
