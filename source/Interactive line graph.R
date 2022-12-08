@@ -10,6 +10,23 @@ library(tidyverse)
 file <- "/Users/danielzhang/Documents/info201/Projects/Untitled/project-danielz6/data/data/death-rates-unsafe-water.csv"
 death_data <- read.csv(file)
 View(death_data)
+
+country_names <- c(unique(death_data$Entity))
+
+
+
+df2 <- death_data %>%
+  filter(Entity == Input$country1)
+filter(as.numeric(Year) > 1999) %>%
+  select(3,4)
+
+df3 <- death_data %>%
+  filter(Entity == Input$country1)
+filter(as.numeric(Year) > 1999) %>%
+  select(3,4)
+
+
+View(df2)
 usa <- death_data %>%
   filter(Entity == "United States") %>%
   filter(as.numeric(Year) > 1999) %>%
