@@ -11,7 +11,7 @@ library(shiny)
 library(ggplot2)
 library(dplyr)
 
-data <- "C:/Users/eddyw/Documents/Info 201/project-danielz6/data/access-drinking-water-stacked.csv"
+data <- "C:/Users/danielzhang/Documents/Info 201/project-danielz6/data/access-drinking-water-stacked.csv"
 wateraccessdata <- read.csv(data)
 
 water_access_by_country <- function(Code) {
@@ -35,6 +35,31 @@ plot_water_access_by_country <- function() {
 
 plot_water_access_by_country()
 
+
+
+
+
+
+
+plot_water_deaths <- function() {
+  plot(df2$Year, df2$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate.,type = "o",col = "red", xlab = "Years", ylab = "Death Rate", 
+       main = "Death Rate Trends [2000 - 2019]",
+       ylim=c(0.02,0.15),
+       xlim = c(2000,2019))
+
+  
+  lines(df3$Year, df3$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate., type = "o", col = "blue")
+  
+  #legend(x=topright,y=0.92, legend=c("Equation 1", "Equation 2"), fill = c("blue","red"))
+  legend( x= "topleft", y=0.92,
+          legend=c("Australia","United States"),
+          col=c("blue", "red"),
+          pch=c("-","-", "-", "-"))
+  
+}
+plot_water_deaths()
+
+
 server <- function(input, output) {
   data_by_year <- reactive({
     wateraccessdata %>% 
@@ -50,28 +75,18 @@ server <- function(input, output) {
   })
     # TBD
 }
-server2 <- function(input, output) {
-  
-  
-  plot(.data[[input$data]], usa$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate.,type = "o",col = "red", xlab = "Years", ylab = "Death Rate", 
-       main = "Death Rate Trends [2000 - 2019]",
-       ylim=c(0.02,0.15))
-  
-  lines(.data[[input$data2]], aus$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate., type = "o", col = "blue")
-  
-  legend( x= "topleft", y=0.92,
-          legend=c("Australia","United States"),
-          col=c("blue", "red"),
-          pch=c("-","-", "-", "-"))
-  
-  
+
+
+
+
+
 ##  output$distPlot <- renderPlotly({
  #   x <- ggplot +
  #     geom_col(mapping = aes(x = year, y = .data[[input$data]]),
  #              color = input$color)
     
     
-  }
+  
 
 
 
