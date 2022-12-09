@@ -10,7 +10,6 @@
 library(shiny)
 library(ggplot2)
 library(dplyr)
-source("/Users/danielzhang/Documents/info201/Projects/Untitled/project-danielz6/source/tabs/tab_panel_chart3.R")
 data <- "https://raw.githubusercontent.com/info201b-au2022/project-danielz6/main/data/access-drinking-water-stacked.csv"
 wateraccessdata <- read.csv(data)
 
