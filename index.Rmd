@@ -5,7 +5,7 @@
 # in comparison to the US or UK, which is caused by multiple factors such as economical stability
 # and infrastructure barriers that make it harder for water sanitation and systems to be implemented there. 
 
-file <- "C:/Users/diyak/OneDrive/Documents/info201/assignments/project-danielz6/data/death-rates-unsafe-water.csv"
+file <- "../data/death-rates-unsafe-water.csv"
 
 death_data <- read.csv(file)
 
@@ -102,7 +102,7 @@ view(data_table_2020)
 # to safe water, even with countries that would be categorized as similar.
 
 library(tidyverse)
-file <- "C:/Users/diyak/OneDrive/Documents/info201/assignments/project-danielz6/data/death-rates-unsafe-water.csv"
+file <- "../data/death-rates-unsafe-water.csv"
 death_data <- read.csv(file)
 
 usa <- death_data %>%
@@ -132,7 +132,7 @@ legend( x= "topleft", y=0.92,
         pch=c("-","-", "-", "-"))
         
         
-        file <- "C:/Users/diyak/OneDrive/Documents/info201/assignments/project-danielz6/data/death-rates-unsafe-water.csv"
+        file <- "../data/death-rates-unsafe-water.csv"
 
 death_data <- read.csv(file)
 
