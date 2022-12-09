@@ -17,26 +17,6 @@ source("tabs/tab_panel_chart3.R")
 source("tabs/tab_panel_summary.R")
 source("tabs/tab_panel_report.R")
 
-# ui <- navbarPage(
-#   title = "Project Example",
-#   position = "fixed-top",
-
-  # # A simple header
-  # header = list(
-  #   tags$style(type = "text/css", "body {padding-top: 70px;}"),
-  #   hr(),
-  #   HTML("... Project Header... "),
-  #   hr()
-  # ),
-  # 
-  # # A simple footer
-  # footer = list(
-  #   tags$style(type = "text/css", "body {padding-top: 70px;}"),
-  #   hr(),
-  #   HTML("... Project Footer ... "),
-  #   hr()
-  # ),
-
   #Introductory Page 
   page1_main_content <- mainPanel(
     titlePanel("Deviations and Inequalities in Global Water Quality"),
@@ -80,32 +60,29 @@ page1_panel <- tabPanel(
   "Introduction", 
   page1_main_content
   )
-  
-  # The three charts
-  # tab_panel_chart1,
-  # tab_panel_chart2,
-  # tab_panel_chart3,
 
+#Chart 1 below
 tab_panel_chart1 <- sidebarPanel(
 )
   chart_tab_1 <- mainPanel(
     p("This bar chart analyzes the percentage of countries' population that has safely managed water access."),
-    selectInput("Year", "Select year:", choices = c("2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"), selected = "2020"),
+    selectInput("Year", "Select Year:", choices = c("2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"), selected = "2020"),
     plotOutput("plot_water_access_by_country")
   )
   chart_panel_1 <- tabPanel(
-    "Safely Managed Water Access Bar Chart", titlePanel("Safely managed water access percentage by country"),
+    "Safely Managed Water Access Bar Chart", titlePanel("Safely Managed Water Access Percentage by Country"),
     chart_tab_1
   )
   
 
-# The project summary
+# The project summary panel 
 page2_sidebar_content <- sidebarPanel(
 )
   page_2__main_content <- mainPanel(
-    h4("3 Major Takeaways"),
+    h4("Major Takeaways"),
     
     p("The US stands higher compared to most countries; however it is not the highest globally, and it is important to know that factors such geographic location, proximity to massive water bodies, and the infrastructure system and set up of a particular region all contribute to ranking of a country in this context."),
+    
     p("Though progress has been made to provide safe drinking water and sanitation to people throughout the world, billions of people still lack access to these services every day.” Many countries face challenges in providing strong sanitation practices and infrastructures for their populations. Improved water supply and sanitation, and better management of water resources, can boost countries' economic growth and can contribute greatly to poverty reduction
 "),
     p("Water sanitation is an issue that falls into the category of public health with a focus on community-wide protection. It influences our health at an individual level, community level, and societal level, and is a huge determinant of population health and we should advocate for more stable and stronger policies, standards, and systems that improve the quality of water globally.")
@@ -114,21 +91,12 @@ page2_sidebar_content <- sidebarPanel(
     "Key Takeaways", titlePanel("Summary of Research"),
     page_2__main_content
     )
-#Intro and Summary displays on app  
+#Panels display on app  
   ui <- navbarPage(
     "",
     page1_panel,
     chart_panel_1,
-    page2_panel,
-    tab_panel_chart3
+    tab_panel_chart3, 
+    page2_panel
 
  )
-  
-
-#   # The project report
-#   tab_panel_report
-# )
-# deployApp()
-  
-  
-  

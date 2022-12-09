@@ -4,8 +4,7 @@ library(shiny)
 source("app_server.R")
 tab_panel_chart3 <-tabPanel(
     "Chart 3",
-    p("This is chart 3."),
-    h4("Chart 1"),
+    titlePanel("Chart 1"),
     p("This bar chart analyzes the percentage of countries' population that has safely managed water access."),
     sidebarPanel(
       input_year_chart3 <- selectInput(
@@ -19,12 +18,7 @@ tab_panel_chart3 <-tabPanel(
         label = "Select Country 2",
         choices = country_names,
         selected = "Australia")
-      
-      
-  #  selectInput("country1", 
- #     "Select Country:", choices = country_names, selected = "United States"),
-#    selectInput("country2",
- #               "Select Country:", choices = country_names, selected = "Australia"),
+
 ),
 mainPanel(
   plotOutput("plot_water_deaths")

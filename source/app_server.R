@@ -1,12 +1,3 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
-
 library(shiny)
 library(ggplot2)
 library(dplyr)
@@ -41,12 +32,6 @@ country_names <- death_data %>%
   filter(Entity == unique(death_data$Entity)) %>%
   select(Entity)
 
-#selectInput("country1",
-##            "Select Country:", choices = country_names, selected = "United States"),
-#selectInput("country2",
-#            "Select Country:", choices = country_names, selected = "Australia"),
-
-
 server <- function(input, output) {
   data_by_year <- reactive({
     wateraccessdata[wateraccessdata$Code %in% c('USA', "NOR", "PAK", "NGA", "NIC", "MNE", "RUS", "COL", "KOR", "PHL", "PSE", "MEX", "CAN", "FRA", "DEU", "JPN", "HUN", "ECU", "NZL", "ETH"), ] %>%
@@ -79,12 +64,3 @@ server <- function(input, output) {
 
   })
 }
-
-
-
-
-
-##  output$distPlot <- renderPlotly({
- #   x <- ggplot +
- #     geom_col(mapping = aes(x = year, y = .data[[input$data]]),
- #              color = input$color)
