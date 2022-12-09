@@ -47,20 +47,6 @@ country_names <- death_data %>%
 #selectInput("country2",
 #            "Select Country:", choices = country_names, selected = "Australia"),
 
-input_year_chart3 <- selectInput(
-  inputId = "country_input",
-  label = "Select Country 1",
-  choices = country_names,
-  selected = "United States")
-
-
-
-input_year_chart3
-input_year_chart3b <- selectInput(
-  inputId = "country_input2",
-  label = "Select Country 2",
-  choices = country_names,
-  selected = "Australia")
 
 df2 <- death_data %>%
   filter(Entity == input_year_chart3) %>%
