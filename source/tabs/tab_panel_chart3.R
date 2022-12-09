@@ -27,7 +27,7 @@ tab_panel_chart3 <-tabPanel(
  #               "Select Country:", choices = country_names, selected = "Australia"),
 ),
 mainPanel(
-  plot()
+  plotOutput("plot_water_deaths")
 #    plot_water_deaths()
 )
 

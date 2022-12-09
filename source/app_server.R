@@ -10,11 +10,10 @@
 library(shiny)
 library(ggplot2)
 library(dplyr)
-source("/Users/danielzhang/Documents/info201/Projects/Untitled/project-danielz6/source/tabs/tab_panel_chart3.R")
 data <- "https://raw.githubusercontent.com/info201b-au2022/project-danielz6/main/data/access-drinking-water-stacked.csv"
 wateraccessdata <- read.csv(data)
 
-file <- "/Users/danielzhang/Documents/info201/Projects/Untitled/project-danielz6/data/death-rates-unsafe-water.csv"
+file <- "../data/death-rates-unsafe-water.csv"
 death_data <- read.csv(file)
 
 water_access_by_country <- function(Code) {
@@ -48,44 +47,6 @@ country_names <- death_data %>%
 #            "Select Country:", choices = country_names, selected = "Australia"),
 
 
-df2 <- death_data %>%
-  filter(Entity == input_year_chart3) %>%
-filter(as.numeric(Year) > 1999) %>%
-  select(3,4)
-View(df2)
-df3 <- death_data %>%
-  filter(Entity == input_year_chart3b) %>%
-filter(as.numeric(Year) > 1999) %>%
-  select(3,4)
-View(df3)
-plot <-function() {
-  
-  ggplot(df2, aes(x = after_stat(year), y = Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate.)) +
-    geom_point(size = 0.8, alpha = 0.09) +
-    geom_smooth(size = 2) +
-    theme_minimal() + labs(title = "Jail Population Distribution in the U.S. By State (1970-2018)", x = "Year", y = "Total Jail Population") +
-    labs(caption = "This plot shows the differences between the total jail population in each state.")
-}
-
-plot()
-plot_water_deaths <- function() {
-  plot(df2$Year, df2$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate.,type = "o",col = "red", xlab = "Years", ylab = "Death Rate",
-       main = "Death Rate Trends [2000 - 2019]",
-       ylim=c(0.02,0.15),
-       xlim = c(2000,2019))
-
-
-  lines(df3$Year, df3$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate., type = "o", col = "blue")
-
-  #legend(x=topright,y=0.92, legend=c("Equation 1", "Equation 2"), fill = c("blue","red"))
-  legend( x= "topleft", y=0.92,
-          legend=c("input_year_chart3","input_year_chart3b"),
-          col=c("blue", "red"),
-          pch=c("-","-", "-", "-"))
-
-}
-plot_water_deaths()
-
 server <- function(input, output) {
   data_by_year <- reactive({
     wateraccessdata[wateraccessdata$Code %in% c('USA', "NOR", "PAK", "NGA", "NIC", "MNE", "RUS", "COL", "KOR", "PHL", "PSE", "MEX", "CAN", "FRA", "DEU", "JPN", "HUN", "ECU", "NZL", "ETH"), ] %>%
@@ -101,6 +62,21 @@ server <- function(input, output) {
       labs(x = "Country Code", y = "Percentage of Safely Managed Water", title = "Safely Managed Water Access by Country") +
       theme(panel.background = element_rect(fill = "gray"), panel.grid.major = element_line(color = "white"))
     return(bar_chart)
+  })
+  output$plot_water_deaths <- renderPlot({
+    view(death_data)
+    df2 <- death_data %>%
+      filter(Entity %in% c(input$country_input,input$country_input2)) %>%
+      filter(as.numeric(Year) > 1999) %>%
+      select(1,3,4)
+
+    chart3_page <- ggplot(df2, aes(x=Year, y=Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate., group=Entity)) +
+      geom_line()+
+      ylab("Deaths Cause)")+
+      xlab("Year")+
+      ggtitle("Causes of Deaths")
+    return(chart3_page)
+
   })
 }
 
