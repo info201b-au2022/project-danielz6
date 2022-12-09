@@ -10,7 +10,7 @@
 library(shiny)
 library(ggplot2)
 library(dplyr)
-
+source("/Users/danielzhang/Documents/info201/Projects/Untitled/project-danielz6/source/tabs/tab_panel_chart3.R")
 data <- "https://raw.githubusercontent.com/info201b-au2022/project-danielz6/main/data/access-drinking-water-stacked.csv"
 wateraccessdata <- read.csv(data)
 
@@ -47,17 +47,41 @@ country_names <- death_data %>%
 #selectInput("country2",
 #            "Select Country:", choices = country_names, selected = "Australia"),
 
+input_year_chart3 <- selectInput(
+  inputId = "country_input",
+  label = "Select Country 1",
+  choices = country_names,
+  selected = "United States")
+
+
+
+input_year_chart3
+input_year_chart3b <- selectInput(
+  inputId = "country_input2",
+  label = "Select Country 2",
+  choices = country_names,
+  selected = "Australia")
 
 df2 <- death_data %>%
   filter(Entity == input_year_chart3) %>%
 filter(as.numeric(Year) > 1999) %>%
   select(3,4)
-
+View(df2)
 df3 <- death_data %>%
   filter(Entity == input_year_chart3b) %>%
 filter(as.numeric(Year) > 1999) %>%
   select(3,4)
+View(df3)
+plot <-function() {
+  
+  ggplot(df2, aes(x = after_stat(year), y = Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate.)) +
+    geom_point(size = 0.8, alpha = 0.09) +
+    geom_smooth(size = 2) +
+    theme_minimal() + labs(title = "Jail Population Distribution in the U.S. By State (1970-2018)", x = "Year", y = "Total Jail Population") +
+    labs(caption = "This plot shows the differences between the total jail population in each state.")
+}
 
+plot()
 plot_water_deaths <- function() {
   plot(df2$Year, df2$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate.,type = "o",col = "red", xlab = "Years", ylab = "Death Rate",
        main = "Death Rate Trends [2000 - 2019]",

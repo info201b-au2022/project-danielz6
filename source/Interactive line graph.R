@@ -16,12 +16,12 @@ country_names <- c(unique(death_data$Entity))
 
 
 df2 <- death_data %>%
-  filter(Entity == Input$country1)
+  filter(Entity == Input$country1 | Entity == Input$country2) %>%
 filter(as.numeric(Year) > 1999) %>%
   select(3,4)
 
 df3 <- death_data %>%
-  filter(Entity == Input$country1)
+  filter(Entity == Input$country1) %>%
 filter(as.numeric(Year) > 1999) %>%
   select(3,4)
 
@@ -40,6 +40,15 @@ aus <- death_data %>%
   select (3,4)
 
 #view(aus)
+plot <-function() {
+  
+  ggplot(df2, aes(x = after_stat(year), y = Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate.)) +
+         geom_point(size = 0.8, alpha = 0.09) +
+         geom_smooth(size = 2) +
+         theme_minimal() + labs(title = "Jail Population Distribution in the U.S. By State (1970-2018)", x = "Year", y = "Total Jail Population") +
+         labs(caption = "This plot shows the differences between the total jail population in each state.")
+}
+plot()
 
 plot(usa$Year, usa$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate.,type = "o",col = "red", xlab = "Years", ylab = "Death Rate", 
      main = "Death Rate Trends [2000 - 2019]",
