@@ -65,9 +65,9 @@ page1_panel <- tabPanel(
 tab_panel_chart1 <- sidebarPanel(
 )
   chart_tab_1 <- mainPanel(
-    p("This bar chart analyzes the percentage of countries' population that has safely managed water access."),
     selectInput("Year", "Select Year:", choices = c("2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"), selected = "2020"),
-    plotOutput("plot_water_access_by_country")
+    plotOutput("plot_water_access_by_country"),
+    p("This bar chart analyzes the percentage of countries' population that has safely managed water access.")
   )
   chart_panel_1 <- tabPanel(
     "Safely Managed Water Access Bar Chart", titlePanel("Safely Managed Water Access Percentage by Country"),
