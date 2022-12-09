@@ -1,0 +1,14 @@
+name: source
+title: source
+username:
+account: diyak
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7854638
+bundleId: 6614327
+url: https://diyak.shinyapps.io/source/
+when: 1670565794.4876
+lastSyncTime: 1670565794.48771
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: Line Graph.R|README.md|US vs UK Boxplot.R

@@ -96,6 +96,7 @@ page2_sidebar_content <- sidebarPanel(
     "",
     page1_panel,
     chart_panel_1,
+    tab_panel_chart2,
     tab_panel_chart3, 
     page2_panel
 

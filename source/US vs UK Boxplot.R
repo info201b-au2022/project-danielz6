@@ -1,4 +1,4 @@
-file <- "C:/Users/diyak/OneDrive/Documents/info201/assignments/project-danielz6/data/death-rates-unsafe-water.csv"
+file <- "../data/death-rates-unsafe-water.csv"
 
 death_data <- read.csv(file)
 

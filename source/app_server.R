@@ -49,7 +49,6 @@ server <- function(input, output) {
     return(bar_chart)
   })
   output$plot_water_deaths <- renderPlot({
-    view(death_data)
     df2 <- death_data %>%
       filter(Entity %in% c(input$country_input,input$country_input2)) %>%
       filter(as.numeric(Year) > 1999) %>%
@@ -63,4 +62,21 @@ server <- function(input, output) {
     return(chart3_page)
 
   })
-}
+  output$plot_death_rates <- renderPlot({
+    uk <- death_data %>%
+      filter(Entity == "United States") %>%
+      select (1,4)
+    
+    usa <- death_data %>%
+      filter(Entity == "Canada") %>%
+      select (1,4)
+    
+    chart2_page <- boxplot(uk$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate.,
+            usa$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate., 
+            ylab = "Death Range",
+            names=c("US", "Canada"))
+    #title(main = "Death Rates from Unsafe Water Sources")
+
+    return(chart2_page)
+    
+  })}

@@ -7,7 +7,7 @@
 # to safe water, even with countries that would be categorized as similar.
 
 library(tidyverse)
-file <- "C:/Users/diyak/OneDrive/Documents/info201/assignments/project-danielz6/data/death-rates-unsafe-water.csv"
+file <- "../data/death-rates-unsafe-water.csv"
 death_data <- read.csv(file)
 
 usa <- death_data %>%
