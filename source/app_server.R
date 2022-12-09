@@ -63,7 +63,7 @@ server <- function(input, output) {
 
   })
   output$plot_death_rates <- renderPlot({
-    uk <- death_data %>%
+    uK <- death_data %>%
       filter(Entity == "United States") %>%
       select (1,4)
     

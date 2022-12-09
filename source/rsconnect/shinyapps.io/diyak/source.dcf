@@ -5,10 +5,10 @@ account: diyak
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 7854638
-bundleId: 6614327
+bundleId: 6616872
 url: https://diyak.shinyapps.io/source/
-when: 1670565794.4876
-lastSyncTime: 1670565794.48771
+when: 1670610587.03124
+lastSyncTime: 1670610587.03126
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: Line Graph.R|README.md|US vs UK Boxplot.R
+ignoredFiles: README.md

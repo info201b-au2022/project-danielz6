@@ -3,8 +3,8 @@
 library(shiny)
 source("app_server.R")
 tab_panel_chart3 <-tabPanel(
-    "Chart 3",
-    titlePanel("Chart 3"),
+    "Global Death Rate Comparison",
+    titlePanel("Death Rate from Unsafe Water Quality: Global"),
     sidebarPanel(
       input_year_chart3 <- selectInput(
         inputId = "country_input",

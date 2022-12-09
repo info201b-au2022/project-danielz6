@@ -5,7 +5,7 @@
 # in comparison to the US or UK, which is caused by multiple factors such as economical stability
 # and infrastructure barriers that make it harder for water sanitation and systems to be implemented there. 
 
-file <- "/Users/danielzhang/Documents/info201/Projects/Untitled/project-danielz6/data/death-rates-unsafe-water.csv"
+file <- "../data/death-rates-unsafe-water.csv"
 
 death_data <- read.csv(file)
 View(death_data)

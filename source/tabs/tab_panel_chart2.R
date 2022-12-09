@@ -3,8 +3,8 @@
 library(shiny)
 
 tab_panel_chart2 <-tabPanel(
-    "Chart 2",
-    titlePanel("Chart 2"),
+    "Death Rate Comparison by Country",
+    titlePanel("Death Rate from Unsafe Water Quality: United States vs. Canada"),
 
     mainPanel(
       plotOutput("plot_death_rates"),

@@ -6,7 +6,7 @@
 
 library(dplyr)
 library(tidyverse)
-data <- "C:/Users/eddyw/Documents/Info 201/project-danielz6/data/access-drinking-water-stacked.csv"
+data <- "../data/access-drinking-water-stacked.csv"
 wateraccessdata <- read.csv(data)
 
 USA_2020 <- wateraccessdata %>%
