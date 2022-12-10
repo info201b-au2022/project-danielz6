@@ -4,7 +4,7 @@ editor_options:
     wrap: 72
 ---
 
-# Deviation in United States' Water Quality: Project Report
+# Deviations and Inequalities in Global Water Quality: Project Report
 
 ## Code name: Water *Contributors: Anumita Basani (Anumitab\@uw.edu), Diya Kumaran (Diyak2\@uw.edu), Eddy Wong (Eddyw206\@hotmail.com), Daniel Zhang (Danielz6\@uw.edu)*
 
@@ -120,20 +120,19 @@ Our four datasets include data on access to drinking water, share of population 
 | Number of deaths by risk factors| 6841           | 31                | <https://ourworldindata.org/water-access> |
 
 ### Findings
-From our research, we are able to examine several patterns and examine various trends that occur from water sanitation and quality in the US, and compare that on a global scale.
+From our research, we are able to examine several patterns and examine various trends that occur from water sanitation and quality in the US and compare that on a global scale.
 
-What is the United States water access ranking compared to other countries?
+What is the United States water quality access ranking compared to other countries?
 
-In the most recent year (2020) of the dataset, The United States' safely managed water access ranks among the top compared to other countries. Although it is not 100 percent like some other countries,  it is close at 97.33 percent of the population having safely managed water access. Including this chart is important as it shows the
+To answer our first research question, in the most recent year (2020) of the dataset, The United States' safely managed water access ranks among the top compared to other countries. Although it is not 100 percent like some other countries, it is close at 97.33 percent of the population having safely managed water access. This number does not fluctuate much from the years of 2010 to 2020, which proves that the US overall ranks high in terms of having clean water and the US population being able to easily access the clean water. Overall, from the research and the charts, we are able to see that the US overall consistently ranks high in comparison to most countries around the world, beyond the fact that individual states and regions within the US still lack proper access to clean and safe water. This is also due to the water systems in the country being able to be provide citizens with clean water through advanced filtration and sanitation systems that are subject to safe water standards.
 
- How does the death rate from unsafe drinking water compare between the US and Canada?
+How does the range of death rate from unsafe water compare between countries with different systems, policies, and structures?
 
+The consequence of poor water quality and consumption of contaminated water is death, and in countries that lack the policies and structures to implement better measures to improve the water quality, the range of the death rate from unsafe water is much higher. For example, from the boxplot we are able to see how the US, which ranks high in terms of access to safe water, in comparison to a country such as Canada, that have a similar range in their death rate, which is relatively low. However, looking at the comparison between the US and Afghanistan, Afghanistan has a much larger range of death rate over the years, indicating there are external factors present in this country that are influencing that higher death rates, such as the economic state and infrastructure.
 
+What are the overall trends in death rate from unsafe water quality globally?
 
-What are the overall trends in death rate from poor water quality between various countries globally?
-
-
-
+From a comparison of several countries around the globe, we were able to see how the trend in the death rate fluctuated in the last 20 years, from 2000 to 2020. Being able to select two countries at a time and compare them to each other was important to analyze as we are able to identify at what point  did a certain country drastically change, or how much a certain country is always increasing or decreasing over the years. For example, when comparing Cambodia and Bangladesh, we are able to see that both countries started with higher death rates in 2000, however, both have a similar trend of declining since then, although Bangladesh stays higher than Cambodia throughout the two decades. When examining this data we are taking into account how geographic location and socioeconomic factors might be influencing this trend. Overall, this is helpful in seeing overall change in death rate, and being able to understand and study this in a broader context of time.
 
 ### Discussion
 Overall, the importance of this issue only increases with time, as water is essential need for survival, and many international organizations use access to safe drinking water and safely managed sanitation facilities as a measure of progress against poverty, disease, and death. As the CDC states, “Access to these services by every man, woman, and child is also considered a human right, not a privilege. Though progress has been made to provide safe drinking water and sanitation to people throughout the world, billions of people still lack access to these services every day.” Many countries face challenges in providing strong sanitation practices and infrastructures for their populations. Communities need to stay healthy in order for other aspects of society to function, and at an individual level, the healthier we are, our life expectancy can improve, and we are overall able to build a healthier, more sustainable environment for the current population as well as populations in the future. It greatly influences our health at an individual level, community level, and societal level, and is a huge determinant of how the world population is growing.  
