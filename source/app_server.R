@@ -50,7 +50,7 @@ server <- function(input, output) {
       filter(as.numeric(Year) > 1999) %>%
       select(1,3,4)
 
-    chart3_page <- ggplot(df2, aes(x=Year, y=Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate., group=Entity)) +
+    chart3_page <- ggplot(df2, aes(x=Year, y=Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate., group=Entity, color=Entity)) +
       geom_line()+
       ylab("Deaths Rate)")+
       xlab("Year")+
