@@ -4,7 +4,7 @@ editor_options:
     wrap: 72
 ---
 
-# Deviation in United States' Water Quality: Project Proposal
+# Deviation in United States' Water Quality: Project Report
 
 ## Code name: Water *Contributors: Anumita Basani (Anumitab\@uw.edu), Diya Kumaran (Diyak2\@uw.edu), Eddy Wong (Eddyw206\@hotmail.com), Daniel Zhang (Danielz6\@uw.edu)*
 
@@ -15,13 +15,12 @@ editor_options:
 ### **Abstract**
 
 We are concerned with global water quality in comparison to the United
-States and how it fluctuates and stays the same. To address this
+States and how it fluctuates and stays the same over time. To address this
 concern, we plan to seek out data that will give us a good idea of the
 comparison between the global and national numbers so we can analyze the
 differences and determine what factors led to the discrepancies. This is
 an important concept because water quality remains a prevalent emerging
-issue in numerous cities across the country such as Reno, Pomona, and
-Arlington.
+issue in numerous cities, states, and countries globally.
 
 ### Keywords
 
@@ -41,7 +40,7 @@ set standards such as the Safe Drinking Water Act, and Environmental
 Protection Agency (EPA) regulations that control the water quality and
 assure that it is safe to consume. The SDWA includes guidelines for
 drinking water quality, water testing schedules, and water testing
-methods. Many states enforce their own drinking water standards that aim
+methods. Many regions enforce their own drinking water standards that aim
 to protect similar to the EPA's national standard.
 
 ### **Problem Domain**
@@ -96,15 +95,15 @@ as land or wildlife.
 
 ### Research Questions
 
-What is the United States water access ranking compared to other countries?
+What is the United States water quality access ranking compared to other countries?
 
 This is important because if we are able to understand the reasons for this then we can work towards changing that so we can drastically improve the water quality throughout the country. The motivation for the question is that the presence of contaminants in cities around the U.S. has led to severe health issues for the people living there so determining the leading factors is essential.
 
- How does the US water ranking compare to Canadas?
+ How does the range of death rate from unsafe water compare between countries with different systems, policies, and structures?
 
-The reason that this is important as through comparing the US to another country that is close in geographic location and similar socioeconomically, we are able to analyze the water health and further identify what is contributing to each country’s ranking and potentially create solutions to prevent those identified factors from influencing poor water quality.
+The reason that this is important as through comparing the US to another country that is close in geographic location and similar socioeconomically, we are able to analyze the water health and further identify what is contributing to each country’s ranking and potentially develop and pose solutions to prevent those identified factors from influencing poor water quality.
 
-What is the overall trend in deaths from poor water quality over the years?
+What are the overall trends in death rate from unsafe water quality globally?
 
 This is important to explore because it examines a major impact of poorer water quality and sanitation systems, and emphasizes the need for reformed water quality standards, or other solutions that minimize the high counts of death from this issue. The motivation for this is to understand the depth of this problem both locally and globally.
 
@@ -121,16 +120,19 @@ Our four datasets include data on access to drinking water, share of population 
 | Number of deaths by risk factors| 6841           | 31                | <https://ourworldindata.org/water-access> |
 
 ### Findings
-From our research, we are able to see multiple patterns and examine various trends that occur from water sanitation and quality in the US, and compare that on a global scale.
+From our research, we are able to examine several patterns and examine various trends that occur from water sanitation and quality in the US, and compare that on a global scale.
 
 What is the United States water access ranking compared to other countries?
 
-In the most recent year (2020) of the dataset, The United States' safely managed water access ranks among the top compared to other countries. Although it is not 100 percent like some other countries,  it is close at 97.33 percent of the population having safely managed water access.
+In the most recent year (2020) of the dataset, The United States' safely managed water access ranks among the top compared to other countries. Although it is not 100 percent like some other countries,  it is close at 97.33 percent of the population having safely managed water access. Including this chart is important as it shows the
 
-How does the US water ranking compare to Canadas?
+ How does the death rate from unsafe drinking water compare between the US and Canada?
 
 
-What is the overall trend in deaths from poor water quality over the years?
+
+What are the overall trends in death rate from poor water quality between various countries globally?
+
+
 
 
 ### Discussion
