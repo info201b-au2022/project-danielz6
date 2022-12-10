@@ -54,7 +54,7 @@ server <- function(input, output) {
       geom_line()+
       ylab("Deaths Rate)")+
       xlab("Year")+
-      ggtitle("Death Rate from Poor Water Quality")
+      ggtitle("Death Rate from Water Quality")
     return(chart3_page)
 
   })
@@ -64,12 +64,13 @@ server <- function(input, output) {
       select (1,4)
     
     cd <- death_data %>%
-      filter(Entity == input$country_input) %>%
+      filter(Entity == input$chart2_country_input) %>%
       select (1,4)
     
     chart2_page <- boxplot(us$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate.,
             cd$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate., 
             ylab = "Death (Rate)",
+            main = "Death Rate from Water Quality Between Countries",
             names=c("US", input$country_input))
 
     return(chart2_page)

@@ -3,6 +3,8 @@
 library(shiny)
 library(dplyr)
 
+file <- "../data/death-rates-unsafe-water.csv"
+death_data <- read.csv(file)
 
 country_names <- death_data %>%
   filter(Entity == unique(death_data$Entity)) %>%
@@ -27,7 +29,7 @@ tab_panel_chart3 <-tabPanel(
 ),
 mainPanel(
   plotOutput("plot_water_deaths"),
-  p("This bar chart analyzes the percentage of countries' population that has safely managed water access."),
+  p("This chart compares the death rate amongst the majority of regions and countries globally and reveals the trend in the death rate from poor water quality. It takes two countries and compares the trend in death rate, which is important in understanding how different parts of the world are impacted by the access to safe water, and what countries are having a high death rate; emphasizing the need for policies and practices that can help decrease the death rate."),
   
 )
 

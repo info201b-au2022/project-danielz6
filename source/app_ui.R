@@ -10,6 +10,7 @@
 library(shiny)
 library(shinydashboard)
 library(rsconnect)
+
 source("tabs/tab_panel_intro.R")
 source("tabs/tab_panel_chart1.R")
 source("tabs/tab_panel_chart2.R")
@@ -45,13 +46,13 @@ source("tabs/tab_panel_report.R")
     
     h2("Research Questions"),
     
-    p("What is the United States water access ranking compared to other countries?"), 
+    p("What is the United States water quality access ranking compared to other countries?"), 
     
     
-    p("How does the death rate from unsafe drinking water compare between the US and Canada?"),
+    p("How does the range of death rate from unsafe water compare between countries with different systems, policies, and structures?"),
       
     
-    p("What are the overall trends in death rate from poor water quality between various countries globally?")
+    p("What are the overall trends in death rate from unsafe water quality globally?")
 
   )
 #Intro tab label appears  
@@ -68,7 +69,7 @@ tab_panel_chart1 <- sidebarPanel(
   chart_tab_1 <- mainPanel(
     selectInput("Year", "Select Year:", choices = c("2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"), selected = "2020"),
     plotOutput("plot_water_access_by_country"),
-    p("This bar chart analyzes the percentage of countries' population that has safely managed water access.")
+    p("This bar chart analyzes the percentage of countries' population that has safely managed water access and is able to display this percentage over a range of 10 years. By comparing this percentage globally, we are able to examine what countries tend to have a lower or higher access to safe water, and how that is fluctuating throughout the years, which can help further research into what factors are influencing a particular country to have a very low or high percentage having access to safely managed water.")
   )
   chart_panel_1 <- tabPanel(
     "Global Safely Managed Water Access", titlePanel("Safely Managed Water Access Percentage by Country"),
@@ -90,7 +91,8 @@ page2_sidebar_content <- sidebarPanel(
     
     h2("2"),
     
-    p("Though progress has been made to provide safe drinking water and sanitation to people throughout the world, billions of people still lack access to these services every day.” Many countries face challenges in providing strong sanitation practices and infrastructures for their populations. Improved water supply and sanitation, and better management of water resources, can boost countries' economic growth and can contribute greatly to poverty reduction
+    p("Though progress has been made to provide safe drinking water and sanitation to people throughout the world, billions of people globally still lack access to these services. Many countries face infrastructure barries and economical challenges in providing strong sanitation practices and systems to improve the quality and accessibility of water. Improved water supply and sanitation, and better management of water resources, has several benefits, inclusing helping the economic growth of a country, contribute greatly 
+    to reducing poverty rates, death rates, as well as improving sustainability and overall community health. 
 "),
     h2("3"), 
     
