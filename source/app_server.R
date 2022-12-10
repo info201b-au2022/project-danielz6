@@ -71,7 +71,7 @@ server <- function(input, output) {
             cd$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate., 
             ylab = "Death (Rate)",
             main = "Death Rate from Water Quality Between Countries",
-            names=c("US", input$country_input))
+            names=c("US", input$chart2_country_input))
 
     return(chart2_page)
     
