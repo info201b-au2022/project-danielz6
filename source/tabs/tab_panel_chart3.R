@@ -27,7 +27,7 @@ tab_panel_chart3 <-tabPanel(
 ),
 mainPanel(
   plotOutput("plot_water_deaths"),
-  p("This bar chart analyzes the percentage of countries' population that has safely managed water access."),
+  p("This bar chart analyzes the percentage of countries' population that has died from unsafe water."),
   
 )
 
