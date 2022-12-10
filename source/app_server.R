@@ -28,10 +28,6 @@ plot_water_access_by_country <- function() {
 
 plot_water_access_by_country()
 
-country_names <- death_data %>%
-  filter(Entity == unique(death_data$Entity)) %>%
-  select(Entity)
-
 server <- function(input, output) {
   data_by_year <- reactive({
     wateraccessdata[wateraccessdata$Code %in% c('USA', "NOR", "PAK", "NGA", "NIC", "MNE", "RUS", "COL", "KOR", "PHL", "PSE", "MEX", "CAN", "FRA", "DEU", "JPN", "HUN", "ECU", "NZL", "ETH"), ] %>%
@@ -56,26 +52,25 @@ server <- function(input, output) {
 
     chart3_page <- ggplot(df2, aes(x=Year, y=Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate., group=Entity)) +
       geom_line()+
-      ylab("Deaths Cause)")+
+      ylab("Deaths Rate)")+
       xlab("Year")+
-      ggtitle("Causes of Deaths")
+      ggtitle("Death Rate from Poor Water Quality")
     return(chart3_page)
 
   })
   output$plot_death_rates <- renderPlot({
-    uK <- death_data %>%
+    us <- death_data %>%
       filter(Entity == "United States") %>%
       select (1,4)
     
-    usa <- death_data %>%
-      filter(Entity == "Canada") %>%
+    cd <- death_data %>%
+      filter(Entity == input$country_input) %>%
       select (1,4)
     
-    chart2_page <- boxplot(uk$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate.,
-            usa$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate., 
-            ylab = "Death Range",
-            names=c("US", "Canada"))
-    #title(main = "Death Rates from Unsafe Water Sources")
+    chart2_page <- boxplot(us$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate.,
+            cd$Deaths...Cause..All.causes...Risk..Unsafe.water.source...Sex..Both...Age..Age.standardized..Rate., 
+            ylab = "Death (Rate)",
+            names=c("US", input$country_input))
 
     return(chart2_page)
     

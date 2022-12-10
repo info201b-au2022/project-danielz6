@@ -1,7 +1,13 @@
 # tab_panel_chart3
 
 library(shiny)
-source("app_server.R")
+library(dplyr)
+
+
+country_names <- death_data %>%
+  filter(Entity == unique(death_data$Entity)) %>%
+  select(Entity)
+
 tab_panel_chart3 <-tabPanel(
     "Global Death Rate Comparison",
     titlePanel("Death Rate from Unsafe Water Quality: Global"),

@@ -45,12 +45,14 @@ source("tabs/tab_panel_report.R")
     
     h2("Research Questions"),
     
-    p("What is the United States water access ranking compared to other countries? 
+    p("What is the United States water access ranking compared to other countries?"), 
     
-      How does the death rate from unsafe drinking water compare between the US and Canada?
+    
+    p("How does the death rate from unsafe drinking water compare between the US and Canada?"),
       
-      What are the overall trends in death rate from poor water quality between various countries globally?
-"),
+    
+    p("What are the overall trends in death rate from poor water quality between various countries globally?")
+
   )
 #Intro tab label appears  
 page1_sidebar_content <- sidebarPanel(
